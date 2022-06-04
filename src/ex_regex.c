@@ -1,7 +1,5 @@
 #include "ex_regex.h"
-#include "ex_intrinsic.h"
-
-static void compile(ex_regex_t *regex);
+#include "filter.h"
 
 ex_regex_t *ex_regex(const char *expression){
     ex_regex_t *result = malloc(sizeof(ex_regex_t));
@@ -31,7 +29,13 @@ void ex_free_regex(ex_regex_t *regex){
     free(regex);
 }
 
+void ex_compile_regex(ex_regex_t *regex){
+    if(regex == NULL) return;
 
-static void compile(ex_regex_t *regex){
+    
+}
+
+
+void ex_regex_matches(ex_regex_t *regex, const char *text){
 
 }

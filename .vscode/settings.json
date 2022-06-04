@@ -1,6 +1,13 @@
 {
     "files.associations": {
         "string": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "cmath": "c",
+        "memory": "c",
+        "xlocale": "c",
+        "xmemory": "c",
+        "xutility": "c",
+        "ex_regex.h": "c",
+        "proc_data.h": "c"
     }
 }
