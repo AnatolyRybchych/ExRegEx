@@ -3,13 +3,7 @@
 
 #include "filter.h"
 
-enum filters{
-    FILTER_IS_CHAR = 0,
-
-    FILTERS_COUNT,
-};
-
-extern ifilter filters[FILTERS_COUNT];
+filter_t *filter_is_char(char ch);
 
 
 #endif

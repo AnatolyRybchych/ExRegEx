@@ -20,7 +20,7 @@ void free_filter_list(filter_list_t **list_ptr){
     *list_ptr = NULL; 
 }
 
-void filter_list_add(filter_list_t *list, const ifilter *interface, const ex_regex_t *regex){
-    list->data = realloc(list->data, ++list->count);
-    list->data[list->count - 1] = interface->init(regex);
+void filter_list_add(filter_list_t *list, filter_t *filter, const ex_regex_t *regex){
+    list->data = realloc(list->data, ++list->count * sizeof(filter_t*));
+    list->data[list->count - 1] = filter;
 }

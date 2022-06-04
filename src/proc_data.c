@@ -1,6 +1,6 @@
 #include "proc_data.h"
 
-proc_data_t *proc_data(char *beg, char *end){
+proc_data_t *proc_data(const char *beg, const char *end){
     proc_data_t *result = malloc(sizeof(proc_data_t));
     memset(result, 0, sizeof(proc_data_t));
 
@@ -20,4 +20,8 @@ void free_proc_data(proc_data_t **data){
 
     free(*data);
     *data = NULL;
+}
+
+bool proc_data_next(proc_data_t *data){
+    return ++data->curr < data->end;
 }

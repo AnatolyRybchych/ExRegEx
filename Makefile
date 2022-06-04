@@ -8,14 +8,14 @@ objects	+= ./build/obj/proc_data.o
 objects	+= ./build/obj/match.o
 
 build: $(objects)
-	gcc -o $(out) $^
+	gcc -g -ggdb -o $(out) $^
 
 run: build
 	./$(out)
 
 build/obj/%.o: src/%.c
 	@mkdir -p ./build/obj
-	gcc -c -o $@ $<
+	gcc -c -g -ggdb -o $@ $<
 
 
 .PHONY: build run

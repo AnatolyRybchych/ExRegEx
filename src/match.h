@@ -23,6 +23,7 @@ struct match_t{
 };
 
 matches_list_t *matches_list();
+void matches_list_add(matches_list_t *list, match_t /*will freed*/ *match);
 void free_matches_list(matches_list_t **list_ptr);
 
 struct matches_list_t{

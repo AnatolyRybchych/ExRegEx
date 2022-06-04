@@ -7,9 +7,11 @@ match_t *match(const char *name, const char *str, int start_index){
 
     result->str_len = strlen(str);
     result->str = malloc(result->str_len + 1);
+    strcpy(result->str, str);
 
     result->name_len = strlen(name);
     result->name = malloc(result->name_len + 1);
+    strcpy(result->name, name);
 
     result->inner_matches = matches_list();
 
@@ -45,4 +47,9 @@ void free_matches_list(matches_list_t **list_ptr){
 
     free(*list_ptr);
     *list_ptr = NULL;
+}
+
+void matches_list_add(matches_list_t *list, match_t /*will freed*/ *match){
+    list->matches = realloc(list->matches, ++list->count * sizeof(match_t*));
+    list->matches[list->count - 1] = match;
 }

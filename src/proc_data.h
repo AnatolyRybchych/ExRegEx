@@ -6,14 +6,14 @@
 
 typedef struct proc_data_t proc_data_t;
 
-proc_data_t *proc_data(char *beg, char *end);
+proc_data_t *proc_data(const char *beg, const char *end);
 void free_proc_data(proc_data_t **data);
-
+bool proc_data_next(proc_data_t *data);
 
 struct proc_data_t{
-    char *beg;
-    char *end;
-    char *curr;
+    const char *beg;
+    const char *end;
+    const char *curr;
 };
 
 
