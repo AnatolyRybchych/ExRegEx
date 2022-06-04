@@ -10,15 +10,15 @@ typedef struct ifilter ifilter;
 typedef struct filter_list_t filter_list_t;
 
 struct filter_t{
-    bool is_active;
+    bool is_active;//false if required to move to nex filter
     void *data;
     const ifilter *interface;
 };
 
 struct ifilter{
     void (*on_first_step)(filter_t *self, const proc_data_t *proc_data);
-    bool (*on_step)(filter_t *self, const proc_data_t *proc_data);
-    match_t *(*get_match)(filter_t *self);
+    bool (*on_step)(filter_t *self, const proc_data_t *proc_data);//returns true, if matched, 
+    match_t *(*get_match)(filter_t *self);//should return NULL if have not
     void (*free)(filter_t *self);
 };
 

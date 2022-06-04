@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "ex_regex.h"
 
 
@@ -18,12 +19,12 @@ void print_matches(const matches_list_t *matches, int tabs){
 
 int main(int argc, char const *argv[])
 {
-    ex_regex_t *regex = ex_regex("gs");
+    ex_regex_t *regex = ex_regex("1[23][23]");
     ex_compile_regex(regex);
 
     printf("expression:\"%s\"\n\n", regex->expr);
 
-    ex_regex_matches(regex, "qwegsfd");
+    ex_regex_matches(regex, "123 132 234");
 
     if(regex->matches->count == 0){
         printf("no matches\n");
