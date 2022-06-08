@@ -1,0 +1,5 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/Velichaisyi/Desktop/ExRegEx'
+gcc -g -ggdb -o ExRegEx.exe build/obj/main.o build/obj/ex_regex.o build/obj/filter.o build/obj/filters.o build/obj/proc_data.o build/obj/match.o build/obj/filter_is_char.o build/obj/filter_is_one_of_chars.o build/obj/filter_named_container.o
+make.exe: Leaving directory 'c:/Users/Velichaisyi/Desktop/ExRegEx'
+ 
