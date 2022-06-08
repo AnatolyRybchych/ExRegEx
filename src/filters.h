@@ -13,8 +13,9 @@ enum filters{
 
 extern ifilter filters[FILTERS_COUNT];
 
-filter_t *filter_is_char(char ch);
-filter_t *filter_is_one_of_chars(char *chars);
+filter_t *filter_is_char(const char ch);
+filter_t *filter_is_one_of_chars(const char *chars);
+filter_t *filter_named_container(const char *name, filter_t *filter);
 
 
 

@@ -7,7 +7,7 @@ typedef struct is_one_of_chars_data{
 }is_one_of_chars_data;
 
 
-filter_t *filter_is_one_of_chars(char *chars){
+filter_t *filter_is_one_of_chars(const char *chars){
     filter_t *result = malloc(sizeof(filter_t));
 
     result->data = malloc(sizeof(is_one_of_chars_data));

@@ -7,7 +7,7 @@ typedef struct is_char_data{
 }is_char_data;
 
 
-filter_t *filter_is_char(char ch){
+filter_t *filter_is_char(const char ch){
     filter_t *result = malloc(sizeof(filter_t));
 
     is_char_data data ={
