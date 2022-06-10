@@ -10,13 +10,13 @@ typedef struct is_one_of_chars_data{
 filter_t *filter_is_one_of_chars(const char *chars){
     filter_t *result = malloc(sizeof(filter_t));
 
+    result->is_active = true;
+    result->interface = &filters[FILTER_IS_ONE_OF_CHARS];
+
     result->data = malloc(sizeof(is_one_of_chars_data));
     ((is_one_of_chars_data*)result->data)->count = strlen(chars);
     ((is_one_of_chars_data*)result->data)->array = malloc(((is_one_of_chars_data*)result->data)->count);
     strcpy(((is_one_of_chars_data*)result->data)->array, chars);
-
-    result->interface = &filters[FILTER_IS_ONE_OF_CHARS];
-    result->is_active = true;
 
     return result;
 }

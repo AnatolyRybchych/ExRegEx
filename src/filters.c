@@ -2,6 +2,7 @@
 #include "filter_is_char.h"
 #include "filter_is_one_of_chars.h"
 #include "filter_named_container.h"
+#include "filter_is_digit.h"
 
 ifilter filters[FILTERS_COUNT] = {
     [FILTER_IS_CHAR] = {
@@ -21,6 +22,12 @@ ifilter filters[FILTERS_COUNT] = {
         .on_step = named_container_on_step,
         .get_match = named_container_get_match,
         .free = named_container_free,
+    },
+    [FILTER_IS_DIGIT] = {
+        .on_first_step = is_digit_on_first_step,
+        .on_step = is_digit_on_step,
+        .get_match = is_digit_get_match,
+        .free = is_digit_free,
     },
 };
 

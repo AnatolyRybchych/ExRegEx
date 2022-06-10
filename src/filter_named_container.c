@@ -1,4 +1,5 @@
 #include "filter_named_container.h"
+#include "filters.h"
 
 typedef struct named_container_data{
     char *name;
@@ -11,6 +12,8 @@ typedef struct named_container_data{
 filter_t *filter_named_container(const char *name, filter_t *filter){
     filter_t *result = malloc(sizeof(filter_t));
 
+    result->is_active = true;
+    result->interface = &filters[FILTER_NAMED_CONTAINER];
     result->data = malloc(sizeof(named_container_data));
     named_container_data *data = (named_container_data*)result->data;
     int name_len = strlen(name);

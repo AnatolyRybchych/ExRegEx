@@ -1,5 +1,32 @@
-make.exe --dry-run --keep-going --print-directory
+make.exe --dry-run --always-make --keep-going --print-directory
 make.exe: Entering directory 'c:/Users/Velichaisyi/Desktop/ExRegEx'
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/main.o src/main.c
+ 
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/ex_regex.o src/ex_regex.c
+ 
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/filter.o src/filter.c
+ 
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/filters.o src/filters.c
+ 
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/proc_data.o src/proc_data.c
+ 
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/match.o src/match.c
+ 
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/filter_is_char.o src/filter_is_char.c
+ 
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/filter_is_one_of_chars.o src/filter_is_one_of_chars.c
+ 
+mkdir -p ./build/obj
+gcc -c -g -ggdb -o build/obj/filter_named_container.o src/filter_named_container.c
+ 
 gcc -g -ggdb -o ExRegEx.exe build/obj/main.o build/obj/ex_regex.o build/obj/filter.o build/obj/filters.o build/obj/proc_data.o build/obj/match.o build/obj/filter_is_char.o build/obj/filter_is_one_of_chars.o build/obj/filter_named_container.o
 make.exe: Leaving directory 'c:/Users/Velichaisyi/Desktop/ExRegEx'
  

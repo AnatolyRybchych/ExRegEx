@@ -8,7 +8,7 @@ This program is built by Equation Solution <http://www.Equation.com>.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 08 12:58:23 2022
+# Make data base, printed on Fri Jun 10 12:25:19 2022
 
 # Variables
 
@@ -53,8 +53,6 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from 'makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# environment
 TMP = C:\Temp
 # environment
 VSCODE_VERBOSE_LOGGING = true
@@ -63,7 +61,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-719e8658-eb33-4b1c-b397-8220f20ff82a-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-58fed82b-b1a9-4723-9c3e-ea5aec0232bf-sock
 # environment
 VSCODE_CWD = C:\Users\Velichaisyi\Desktop\ExRegEx
 # environment
@@ -91,7 +89,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12800_DUXEDULQWFTPQZGH
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2568_JUQBZHQLHGXZZXPI
 # makefile (from 'makefile', line 1)
 out := ExRegEx.exe
 # environment
@@ -209,13 +207,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
-VSCODE_PID = 12800
+VSCODE_PID = 2568
 # environment
 USERDOMAIN_ROAMINGPROFILE = HOME-PC
 # variable set hash-table stats:
-# Load=101/1024=10%, Rehash=0, Collisions=15/138=11%
+# Load=99/1024=10%, Rehash=0, Collisions=15/136=11%
 
 # Pattern-specific Variable Values
 
@@ -223,7 +219,7 @@ USERDOMAIN_ROAMINGPROFILE = HOME-PC
 
 # Directories
 
-# . (key c:/Users/Velichaisyi/Desktop/ExRegEx, mtime 1654682286ll): 9 files, no impossibilities.
+# . (key c:/Users/Velichaisyi/Desktop/ExRegEx, mtime 1654684341ll): 9 files, no impossibilities.
 # src (key c:/Users/Velichaisyi/Desktop/ExRegEx/src, mtime 1654682208ll): No files, no impossibilities so far.
 
 # 9 files, no impossibilities in 2 directories.
@@ -348,6 +344,6 @@ build/obj/filter_is_char.o:
 # strcache performance: lookups = 36 / hit rate = 30%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=1/36=3%
-# Finished Make data base on Wed Jun 08 12:58:23 2022
+# Finished Make data base on Fri Jun 10 12:25:19 2022
 
  

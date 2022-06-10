@@ -9,6 +9,7 @@
         "xutility": "c",
         "ex_regex.h": "c",
         "proc_data.h": "c",
-        "filter_is_char.h": "c"
+        "filter_is_char.h": "c",
+        "filter_is_digit.h": "c"
     }
 }
